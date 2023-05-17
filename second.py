@@ -2,6 +2,8 @@ import json
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
+from PIL import Image
+
 
 def load_lottiefile(filepath: str):
     with open(filepath, 'r') as f:
@@ -9,7 +11,8 @@ def load_lottiefile(filepath: str):
 squad_logo = load_lottiefile('lottiefiles/squad.json')
 controller_logo = load_lottiefile('lottiefiles/cotroller.json')
 dis_link = 'https://discord.gg/v3FDUQ5t'
-st.set_page_config(page_title="The Squad", page_icon="🇩🇿", layout='wide')
+logo = Image.open('images/logo.png')
+st.set_page_config(page_title="The Squad", page_icon=logo, layout='wide')
 #--- sidebar---
 st.sidebar.title('The Squad')
 with st.sidebar:
