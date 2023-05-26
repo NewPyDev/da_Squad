@@ -47,7 +47,7 @@ with st.container():
         st.write("Rainbow six seige")
         st.write("Counter-Strike 1.6")
         st.write("Counter-Strike Global offensive")
-        st.write("Msaset Riad")
+     
 
 
 
